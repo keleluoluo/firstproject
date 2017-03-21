@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>启蒙乐园</title>
+    <link rel="stylesheet" href="css/base5.css"/>
+    <link rel="stylesheet" href="css/qimeng.css"/>
+    <link rel="icon" href="favicon.ico"/>
+
+
+</head>
+<body>
+<input type="button" value="购物的同时要保护眼睛哦" id="btnqimeng" class="fr"/>
+<!--头部-->
+<div class="header w clearfix">
+    <div class="left fl">
+        <ul>
+            <li><a href="#"><img src="images/iphone.png" alt=""/>微商城</a></li>
+            <li><a href="#"><img src="images/weibo.png" alt=""/>官方微博</a></li>
+            <li><a href="#"><img src="images/ym.png" alt=""/>台湾元祖</a></li>
+        </ul>
+
+    </div>
+    <div class="right fr">
+        <ul>
+            <li><a href="#">登录/注册</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">购物车</a></li>
+            <li><a href="#">元祖门店</a></li>
+            <li><a href="#">积分商城</a></li>
+            <li><a href="#">帮助中心</a></li>
+        </ul>
+    </div>
+
+</div>
+<!--顶部广告部分-->
+<div class="headebanner w clearfix">
+    <a href="#"><img src="images/headerbanner.png" alt=""/></a>
+</div>
+<!--logo和搜索框部分-->
+<div class="title w clearfix">
+    <div class="logo fl">
+        <a href="snow/雪花.html"><img src="images/logo1.png" alt=""/></a>
+    </div>
+    <div class="center fl">
+        <input type="text" placeholder="请输入搜索名称" class="search fl"/>
+        <input type="button" value="搜索" class="btn fl"/>
+    </div>
+    <div class="right fr">
+        <img src="images/right.png" alt=""/>
+    </div>
+    <div class="hotword fl">
+        <ul>
+            <li>热门搜索：</li>
+            <li>MUCH蛋糕</li>
+            <li>精致西点</li>
+            <li>2016补冬季</li>
+        </ul>
+    </div>
+
+</div>
+<!--banner上面部分-->
+<div class="top clearfix w">
+    <div class="left fl">
+        <a href="#">全部商品分类</a>
+        <div class="liebiao">
+            <img src="images/liebiao.bmp" alt=""/>
+        </div>
+    </div>
+    <div class="right fl">
+        <ul>
+            <li><a href="index.html">元祖商城</a></li>
+            <li><a href="#">最新活动</a></li>
+            <li><a href="story.html">品牌故事</a></li>
+            <li><a href="eat.html">企业试吃</a></li>
+            <li><a href="qimeng1.html">启蒙乐园</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--中间内容========开始-->
+<div class="content w">
+    <div class="content-top">
+        首页 > 元祖启蒙乐园
+    </div>
+    <div class="content-mid " id="content-mid">
+        <img src="images5/qimemgbeij.png" alt=""/>
+    </div>
+</div>
+
+<!--footer部分-->
+<div class="footer w clearfix">
+    <div class="slogen">
+        <span class="slogen-item sicon1"><img src="images/jingxuanshicai.png" alt=""></span>
+        <span class="slogen-item sicon2"><img src="images/yongxinfuwu.png" alt=""></span>
+        <span class="slogen-item sicon3"><img src="images/shipinanquan.png" alt=""></span>
+        <span class="slogen-item sicon4"><img src="images/tiexinzhaipei.png" alt=""></span>
+    </div>
+    <div class="link">
+        <span>帮助中心 |  关于我们  |  元祖服务   |    元组会员   | 人才招聘   |   联系我们</span>
+    </div>
+    <div class="rightCopy">
+        <p>版权所有@2015上海元祖梦果子股份有限公司 &nbsp;<img src="images/guohui.png" alt=""/>泸公网安备31011802001203号</p>
+    </div>
+    <div class="bot">
+        <img src="images/bot1.png" alt=""/>
+        <img src="images/bot2.png" alt=""/>
+        <img src="images/bot3.png" alt=""/>
+        <img src="images/bot4.png" alt=""/>
+    </div>
+</div>
+<script src="js/common.js"></script>
+<script src="js/jquery-1.12.2.js"></script>
+<script>
+    $(function(){
+        $(".left").mouseover(function(){
+            $(".liebiao").stop().slideDown();
+
+        });
+        $(".left").mouseout(function(){
+            $(".liebiao").stop().slideUp();
+        });
+    })
+</script>
+<!--网页开关灯-->
+<script>
+    $(function(){
+        $("#btnqimeng").click(function(){
+            if($("body").hasClass("cls")){
+                $("body").removeClass("cls");
+            }else{
+                $("body").addClass("cls");
+            }
+            $("#btnqimeng").mouseout(function(){
+                $("body").removeClass("cls");
+            });
+            //    $("body").toggleClass("cls");
+        })
+    })
+</script>
+
+
+</body>
+
+</html>

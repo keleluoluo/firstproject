@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            background: #000;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+        }
+
+        .con {
+            width: 1200px;
+            height: 500px;
+            margin: 100px auto;
+            position: relative;
+            perspective: 1800px;
+        }
+
+        .con ul {
+            width: 160px;
+            height: 180px;
+            background: url("images/center.jpg") no-repeat;
+            -webkit-background-size: 100%;
+            background-size: 100%;
+            position: absolute;
+            top: 800px;
+            left: 50%;
+            margin-left: -80px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #fff;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            animation: autoPlay 5s infinite linear;
+        }
+
+        @keyframes autoPlay {
+            0% {
+                transform: rotateY(0deg) rotateX(-5deg);
+            }
+            25% {
+                transform: rotateY(90deg) rotateX(5deg);
+            }
+            50% {
+                transform: rotateY(180deg) rotateX(-5deg);
+            }
+            75% {
+                transform: rotateY(270deg) rotateX(5deg);
+            }
+            100% {
+                transform: rotateY(360deg) rotateX(-5deg);
+            }
+        }
+
+        .con ul li {
+            width: 160px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #fff;
+            position: absolute;
+            display: none;
+        }
+
+        .btn {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+
+        .btn button {
+            width: 150px;
+            height: 30px;
+            box-shadow: 0 0 10px #fff;
+            background: none;
+            color: #ffffff;
+            border-radius: 5px;
+            border: none;
+            margin-left: 20px;
+        }
+        a{
+            color: #FFFFFF;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    </style>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/snowfall.jquery.js"></script>
+    <script>
+        $(function () {
+            $(window).snowfall('clear');
+            $(window).snowfall({
+                image: "images/huaban.png",
+                flakeCount: 50,
+                minSize: 5,
+                maxSize: 22
+            });
+            var liDeg = 0;
+            $('.con ul li').each(function (index, ele) {
+                var liBg = index + 1;
+                liDeg = -index * 360 / $('.con ul li').length;
+                $(ele).css({
+                    'background': 'url("images/' + liBg + '.jpg") no-repeat',
+                    'background-size': '100%',
+                    'transform': 'rotateY(' + liDeg + 'deg) translateZ(400px)'
+                });
+            });
+            var fadeTime = 0;
+            $(function () {
+                $('.con ul li').each(function (index, ele) {
+                    fadeTime = index * 1000;
+                    $(ele).delay(fadeTime).fadeIn(3000);
+                });
+            });
+            $(function () {
+                $('.con ul').stop().animate({'top': 100}, 2000);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="con">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<div class="btn">
+    <button><a href="index.html">进入官网</a></button>
+</div>
+<audio src="images/薛之谦 - 刚刚好.mp3" autoplay preload="auto" loop></audio>
+</body>
+</html>

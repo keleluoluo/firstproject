@@ -1,0 +1,169 @@
+body,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dd,dt,p{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Î¢ÈíÑÅºÚ";
+    color: #666666;
+}
+img,input,button{
+    border: 0 none;
+    outline-style: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+ul,ol{
+    list-style: none;
+}
+.clearfix:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+.clearfix{
+    zoom: 0;
+}
+a{
+    color: #666666;
+    text-decoration: none;
+}
+a:hover{
+    color: #C81623;
+}
+s,i,em{
+    font-style: normal;
+    text-decoration: none;
+}
+.col-red{
+    color: #C81623 !important;
+}
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.al{
+    text-align: left;
+}
+.ar{
+    text-align: right;
+}
+.ac{
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.header{
+    height: 33px;
+    line-height: 33px;
+    background-color: #EEEEEE;
+}
+.header .left ul li{
+    float: left;
+    padding:0 20px;
+}
+.header .right ul li{
+    float: left;
+    padding: 0 10px;
+}
+.title{
+    height: 94px;
+}
+.center{
+    margin-top: 23px;
+}
+.center .search{
+    width: 425px;
+    height: 30px;
+    border: 3px solid #C7023A;
+    padding-left: 6px;
+}
+.center .btn{
+    width: 70px;
+    height: 36px;
+    background-color: #C7023A;
+    color: #ffffff;
+    font-size: 18px;
+}
+.title .hotword ul li{
+    float: left;
+    margin-top: 8px;
+    color: #AEAEAE;
+    padding: 0 4px;
+}
+.top{
+    border-bottom: 3px solid #E9004F;
+}
+.top .left{
+    width: 224px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    background-color:#E9004F;
+    font-size: 20px;
+    position: relative;
+}
+.top .left a{
+    color: white;
+}
+.top .right ul li{
+    float: left;
+    line-height: 37px;
+    font-size: 18px;
+    padding: 0 15px;
+}
+.footer {
+    height: 300px;
+    background-color: #FFFFFF;
+    border-top: 4px solid #E9004F;
+    text-align: center;
+}
+.footer .slogen{
+    position: relative;
+    margin-top: 15px;
+    height: 140px;
+}
+.footer .slogen-item{
+    left: 50%;
+    position: absolute;
+    margin-top: 20px;
+}
+.footer .slogen .sicon1{
+    margin-left: -590px;
+}
+.footer .slogen .sicon2{
+    margin-left: -300px;
+}
+.footer .slogen .sicon3{
+    margin-left: 0;
+}
+.footer .slogen .sicon4{
+    margin-left: 300px;
+}
+.footer .link{
+    margin: 10px 0;
+}
+.footer .bot{
+    margin-top: 20px;
+}
+.liebiao{
+    position: absolute;
+    top:40px;
+    left: 0;
+    display: none;
+    width: 224px;
+    height: 434px;
+    z-index: 5;
+}
+
+
+

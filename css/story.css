@@ -1,0 +1,335 @@
+.banner {
+    height: 430px;
+    /*background-color: pink;*/
+}
+.banner .banners{
+    width: 1126px;
+    height: 338px;
+    background-color: orange;
+    margin-top: 44px;
+    margin-left: 35px;
+    position: relative;
+    overflow: hidden;
+}
+.banner .banners ul{
+    width: 4504px;
+    height: 460px;
+    position: absolute;
+}
+.banner .banners ul li{
+    width: 1126px;
+    height: 338px;
+    float: left;
+}
+.banner .banners ol{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 20px;
+}
+.banner .banners ol li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.8);
+    color: #ffffff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.banner .banners ol .current{
+    background: #ffd0b8;
+}
+/*.banner .screens {*/
+    /*width: 1126px;*/
+    /*height: 338px;*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+/*}*/
+/*.banner .screens li {*/
+    /*width: 1126px;*/
+    /*height: 338px;*/
+    /*overflow: hidden;*/
+    /*float: left;*/
+/*}*/
+/*.banner .screens ul {*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0px;*/
+    /*width: 4504px;*/
+/*}*/
+/*.banner .allbox ol {*/
+    /*position: absolute;*/
+    /*right: 10px;*/
+    /*bottom: 10px;*/
+    /*line-height: 20px;*/
+    /*text-align: center;*/
+/*}*/
+
+/*.banner .allbox ol li {*/
+    /*float: left;*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*background: #fff;*/
+    /*border: 1px solid #ccc;*/
+    /*margin-left: 10px;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*.banner .allbox ol li.current {*/
+    /*background: #E9004F;*/
+/*}*/
+
+/*.banner #arr {*/
+    /*display: none;*/
+/*}*/
+
+/*.banner #arr span {*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+    /*position: absolute;*/
+    /*left: 5px;*/
+    /*top: 50%;*/
+    /*margin-top: -20px;*/
+    /*background: #000;*/
+    /*cursor: pointer;*/
+    /*line-height: 40px;*/
+    /*text-align: center;*/
+    /*font-weight: bold;*/
+    /*font-family: '黑体';*/
+    /*font-size: 30px;*/
+    /*color: #fff;*/
+    /*opacity: 0.3;*/
+    /*border: 1px solid #fff;*/
+/*}*/
+/*.banner #arr #right {*/
+    /*right: 5px;*/
+    /*left: auto;*/
+/*}*/
+
+/*content部分开始===========*/
+.content1 {
+    width: 1126px;
+    height: 400px;
+    /*background-color: pink;*/
+    text-align: center;
+}
+.content1 .main {
+    width: 225px;
+    height: 57px;
+}
+.content1 h1 {
+    font: 900 28px "微软雅黑";
+    color: #000000;
+    margin-top: 35px;
+}
+.content1 p {
+    font: 400 14px/28px "微软雅黑";
+}
+.content2 {
+    width: 910px;
+    height: 400px;
+    /*background-color: pink;*/
+    text-align: center;
+}
+.content2 .main {
+    width: 225px;
+    height: 57px;
+}
+.content2 .img {
+    width: 910px;
+    height: 300px;
+    margin-top: 36px;
+    background-color:#F9F9F9;
+    position: relative;
+}
+.content2 .img .item {
+    width: 173px;
+    height: 173px;
+    border-radius: 173px;
+}
+.content2 .img h1 {
+    font: 700 14px "宋体";
+    color: #666666;
+    padding: 28px;
+}
+.content2 .img p {
+    font: 700 12px "宋体";
+    color: #666666;
+    marging-top:10px 10px;
+}
+.content2 .current{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    margin: -10px;
+}
+.content2 #item1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #FFD421;
+    box-shadow: 0 0 20px 0 #FFD421;
+}
+.content2 #item2 {
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    background-color: #E8C5DE;
+    box-shadow: 0 0 20px 0 #E8C5DE;
+}
+.content2 #item3 {
+    position: absolute;
+    top: 0px;
+    right: 140px;
+    background-color: #9CE6F8;
+    box-shadow: 0 0 20px 0 #9CE6F8;
+}
+.content2 #item4 {
+    position: absolute;
+    bottom: 0px;
+    left:150px;
+    background-color: #AD9ECC;
+    box-shadow: 0 0 20px 0 #AD9ECC;
+}
+.content2 #item5 {
+    position: absolute;
+    bottom: 0px;
+    left: 450px;
+    background-color: #CCFF7B;
+    box-shadow: 0 0 20px 0 #CCFF7B;
+}
+.content2 #item6 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #E8C5DE;
+    box-shadow: 0 0 20px 0 #E8C5DE;
+}
+/*放大镜部分开始==========*/
+.menu {
+    width: 910px;
+    height: 345px;
+    /*background-color: pink;*/
+    margin-top: 55px;
+}
+.menu .box {
+    width: 298px;
+    height: 345px;
+    border: 1px solid #EEE;
+    position: relative;
+    float: left;
+}
+
+.menu .big {
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: 0;
+    left: 320px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    display: none;
+}
+
+.menu .mask {
+    width: 150px;
+    height: 150px;
+    background: rgba(191, 255, 191, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: move;
+    display: none;
+}
+.menu .small {
+    position: relative;
+}
+.menu .list {
+    width: 445px;
+    height: 115px;
+    /*background-color: blue;*/
+    float: left;
+    margin-top: 86px;
+    margin-left: 32px;
+}
+.menu .list h1 {
+    font: 400 16px "微软雅黑";
+    color: #000;
+}
+.menu .list p {
+    margin-top: 30px;
+    font: 400 12px/24px "宋体";
+    color: #000;
+}
+/*news部分开始=========*/
+.news {
+    width: 910px;
+    height: 130px;
+    /*background-color: green;*/
+    margin-top: 25px;
+}
+.news .sub_new {
+    width: 840px;
+    height: 130px;
+    /*background-color: red;*/
+    margin-left: 30px;
+}
+.news .sub_new  h1 {
+    font: 400 18px/30px "微软雅黑";
+    color: #000;
+}
+.news .sub_new  p {
+    margin-top: 30px;
+    font: 400 12px/24px "宋体";
+    color: #000;
+}
+/*无缝滚动==========*/
+.scroll {
+    width: 910px;
+    height: 258px;
+}
+.scroll .box1 {
+    width: 700px;
+    height: 256px;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+}
+.scroll .box1 img {
+    vertical-align: top;
+}
+.scroll .box1 ul li {
+    float: left;
+}
+
+.scroll .box1 ul {
+    width: 4200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.bottom {
+    width: 910px;
+    height: 57px;
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 30px;
+}
+.bottom .main {
+    width: 225px;
+    height: 57px;
+}
+.time {
+    width: 1256px;
+    height: 397px;
+    background-image: url("../images3/time.png");
+    opacity: 0.5;
+    margin-left: 46px;
+}
+.time:hover {
+    opacity: 1;
+    box-shadow: 0 0 20px 0 #CCFF7B;
+}

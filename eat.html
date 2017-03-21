@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="蛋糕制作，蛋糕销售，元祖蛋糕，企业制作，蛋糕口味，元祖食品，元祖食品公司"/>
+    <meta name="description" content="蛋糕制作，蛋糕销售，元祖蛋糕，企业制作，蛋糕口味"/>
+    <title>企业试吃</title>
+    <link rel="stylesheet" href="css/base4.css"/>
+    <link rel="stylesheet" href="css/eat.css"/>
+    <link rel="icon" href="favicon.ico"/>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/vmc.slider.full.js"></script>
+    <script>
+        $(function () {
+            //二维码隐藏
+            $(".left-1").mouseover(function () {
+                $(".left-img").stop().show(500)
+            });
+
+            $(".left-1").mouseout(function () {
+                $(".left-img").stop().hide(800)
+            });
+            //顶部广告关闭
+            $(".headebanner").click(function () {
+                $(this).hide()
+            });
+            //商品轮播图
+            //
+            var options = {
+                width: 1200, // 宽度
+                height: 380, // 高度
+                gridCol: 10, // 网格列数
+                gridRow: 5, // 网格行数
+                gridVertical: 20, // 栅格列数
+                gridHorizontal: 10, // 栅格行数
+                autoPlay: true, // 自动播放
+                ascending: true, // 图片按照升序播放
+                effects: [ // 使用的转场动画效果
+                    'fade', 'fadeLeft', 'fadeRight', 'fadeTop', 'fadeBottom', 'fadeTopLeft', 'fadeBottomRight',
+                    'blindsLeft', 'blindsRight', 'blindsTop', 'blindsBottom', 'blindsTopLeft', 'blindsBottomRight',
+                    'curtainLeft', 'curtainRight', 'interlaceLeft', 'interlaceRight', 'mosaic', 'bomb', 'fumes'
+                ],
+                ie6Tidy: false, // IE6下精简效果
+                random: false, // 随机使用转场动画效果
+                duration: 2000, // 图片停留时长（毫秒）
+                speed: 800 // 转场效果时长（毫秒）
+            };
+            /* 创建轮播效果 */
+            $('#slider').vmcSlider(options);
+
+//            客服服务开始
+            $(".btn_top").hide();
+            $(".btn_top").on("click", function () {
+                $('html, body').animate({scrollTop: 0}, 300);
+                return false;
+            });
+            $(window).bind('scroll resize', function () {
+                if ($(window).scrollTop() <= 300) {
+                    $(".btn_top").hide();
+                } else {
+                    $(".btn_top").show();
+                }
+            });
+           $("#closeLight-1").click(function(){
+               $("body").toggleClass("cls");
+               $(".main").show(500);
+           });
+        });
+    </script>
+    <script src="js/snow.js"></script>
+    <script>
+        $(function(){
+            $(".title>.logo").click(function(){
+                $(this).toggleClass("cls");
+//                $(this).background("red");
+                createSnow("",6);
+            })
+        });
+
+    </script>
+</head>
+<body>
+<!--头部导航开始=============B-->
+<div class="header w clearfix">
+    <div class="left fl">
+        <ul>
+            <li class="left-1">
+                <i></i>
+                微商城
+                <s></s>
+                <span>丨</span>
+            </li>
+            <!--二维码开始-->
+            <div class="left-img">
+                <img src="images4/qrcode.jpg" alt="二维码"/>
+            </div>
+            <!--二维码结束-->
+            <li class="left-2">
+                <a href="#">
+                    <i></i>
+                    官方微博
+                </a>
+            </li>
+            <li class="left-3">
+                <a href="#">
+                    <i></i>
+                    台湾元祖
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="right fr">
+        <ul>
+            <li><a href="#">登录/注册</a></li>
+            <li><a href="#">会员中心</a></li>
+            <li><a href="#">购物车</a></li>
+            <li><a href="#">元祖门店</a></li>
+            <li><a href="#">积分商城</a></li>
+            <li><a href="#">帮助中心</a></li>
+        </ul>
+    </div>
+</div>
+<!--头部导航结束=============E-->
+<!--头部下方广告开始-->
+<div class="headebanner w clearfix">
+    <span id="close">×</span>
+    <img src="images4/headerbanner.png" alt=""/>
+</div>
+<!--头部下方广告结束-->
+<!--商品顶部开始-->
+<div class="title w clearfix">
+    <!--商品顶部logo开始-->
+    <div class="logo fl">
+        <a href="snow/雪花.html"><img src="images4/logo1.png" alt=""/></a>
+    </div>
+    <!--商品顶部logo结束-->
+    <!--商品顶部搜索开始-->
+    <div class="center fl">
+        <input type="text" placeholder="请输入搜索名称" class="search fl"/>
+        <input type="button" value="搜索" class="btn fl"/>
+    </div>
+    <!--商品顶部电话信息开始-->
+    <div class="right fr">
+        <img src="images4/titleright.png" alt=""/>
+    </div>
+    <!--商品顶部电话信息结束-->
+    <!--商品顶部搜索热词开始-->
+    <div class="hotword fl">
+        <ul>
+            <li>热门搜索：</li>
+            <li>MUCH蛋糕</li>
+            <li>精致西点</li>
+            <li>2016补冬季</li>
+        </ul>
+    </div>
+    <!--商品顶部搜索热词结束-->
+</div>
+<!--商品顶部结束-->
+<!--商品导航开始-->
+<div class="top clearfix w">
+    <div class="left fl">
+        <dl>
+            <dt><a href="#">全部商品分类</a></dt>
+        </dl>
+    </div>
+    <div class="right fl">
+        <ul>
+            <li><a href="index.html">元祖商城<i>丨</i></a></li>
+
+            <li><a href="Activity.html">最新活动 <i>丨</i></a></li>
+
+            <li><a href="story.html">品牌故事 <i>丨</i></a></li>
+
+            <li><a href="eat.html">企业试吃 <i>丨</i></a></li>
+
+            <li><a href="qimeng1.html">启蒙乐园 <i>丨</i></a></li>
+        </ul>
+    </div>
+</div>
+<!--商品导航结束-->
+<!--商品文字导航开始-->
+<div class="locatinon w">
+    <a href="">主页</a> <span>></span> <a href="">企业试吃</a><a href="">|公司试吃</a>
+</div>
+<!--商品文字导航结束-->
+<!--商品主要内容开始-->
+<!--头部主要内容照片开始-->
+<div class="main w clearfix " id="slider">
+    <img src="images4/01.jpg" alt=""/>
+    <img src="images4/2.jpg" alt=""/>
+    <img src="images4/3.jpg" alt=""/>
+    <img src="images4/4.jpg" alt=""/>
+    <img src="images4/5.jpg" alt=""/>
+    <img src="images4/6.jpg" alt=""/>
+</div>
+<!--头部主要内容照片结束-->
+<!--头部主要内容文字开始-->
+<div class="nav-world w clearfix">
+    <table width="90%">
+        <tr>
+            <td class="td1">元祖企业试吃活动</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>申报试吃条件：</td>
+            <td>元祖试吃申请方式：</td>
+        </tr>
+        <tr>
+            <td>1、试吃对象：公司企业或机构单位；</td>
+            <td>1、元祖官网申请，如下表填写详细信息，发送邮箱至:</td>
+        </tr>
+        <tr>
+            <td>2、试吃活动人数：需有12个或以上人员参与；</td>
+            <td class="td-com">services@ganso.net;(该表格只适用PC端)</td>
+        </tr>
+        <tr>
+            <td>3、试吃活动场所：需要提供茶水间、会议室、休息室或可聚集的场地；</td>
+            <td><span>2、拨打</span><span class="td-phone">400-110-3737</span><span>客服热线咨询申请</span>；</td>
+        </tr>
+        <tr>
+            <td>4、试吃介绍：元祖配送人员需要当场切分，并为大家做简短介绍；</td>
+            <td>3、因申请客户众多，我们会尽量在5个工作日内联系您，</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>敬请耐心等待，感谢您的支持。</td>
+        </tr>
+    </table>
+</div>
+<!--头部主要内容文字结束-->
+<!--分割线开始-->
+<div class="partition w clearfix"></div>
+<!--头部主要内容商品信息表格 开始-->
+<!--标题开始-->
+<br/>
+<br/>
+<br/>
+
+<p class="title">请您正确填写下列信息</p>
+<!--标题结束-->
+<!--头部信息表格开始-->
+<div class="user w">
+    <table width="99%">
+        <tbody>
+        <tr>
+            <td width="2%">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>公司名称：
+                <input id="Company_Name" type="text" name="Company_Name" placeholder="请输入公司全称" class="inputClass"
+                       required=""><span id="Company_Name_tip">&nbsp;*</span></td>
+            <td>品尝场所：
+                <select name="Place" id="Place" class="selectClass">
+                    <option id="Place1" value="休息室">休息室</option>
+                    <option id="Place2" value="茶水间">茶水间</option>
+                    <option id="Place3" value="会议室">会议室</option>
+                    <option id="Place4" value="其他">其他</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>公司区域：
+                <select name="Province" id="Province" class="province">
+                    <option value="省份">省份</option>
+                    <option value="安徽">安徽</option>
+                    <option value="北京">北京</option>
+                    <option value="福建">福建</option>
+                    <option value="甘肃">甘肃</option>
+                    <option value="广东">广东</option>
+                    <option value="广西">广西</option>
+                    <option value="贵州">贵州</option>
+                    <option value="海南">海南</option>
+                    <option value="河北">河北</option>
+                    <option value="河南">河南</option>
+                    <option value="黑龙江">黑龙江</option>
+                    <option value="湖北">湖北</option>
+                    <option value="湖南">湖南</option>
+                    <option value="吉林">吉林</option>
+                    <option value="江苏">江苏</option>
+                    <option value="江西">江西</option>
+                    <option value="辽宁">辽宁</option>
+                    <option value="内蒙古">内蒙古</option>
+                    <option value="宁夏">宁夏</option>
+                    <option value="青海">青海</option>
+                    <option value="山东">山东</option>
+                    <option value="山西">山西</option>
+                    <option value="陕西">陕西</option>
+                    <option value="上海">上海</option>
+                    <option value="四川">四川</option>
+                    <option value="天津">天津</option>
+                    <option value="西藏">西藏</option>
+                    <option value=" 新疆"> 新疆</option>
+                    <option value="云南">云南</option>
+                    <option value="浙江">浙江</option>
+                    <option value="重庆">重庆</option>
+                </select>
+                <select name="City" id="City" class="city">
+                    <option value="地级市">地级市</option>
+                </select>
+                <select name="County" id="County" class="county">
+                    <option value="市、县级市、县">市、县级市、县</option>
+                </select><span id="City_tip">&nbsp;*</span></td>
+            <td>参与人数：
+                <input id="The_Number_of_Participants" type="text" name="The_Number_of_Participants"
+                       placeholder="请输入参与品尝活动的人员数量" class="inputClass"><span id="Number_Participants_tip">&nbsp;*</span>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>公司地址：
+                <input id="Address" type="text" name="Address" placeholder="请输入公司的详细地址" class="inputClass"><span
+                        id="Address_tip">&nbsp;*</span></td>
+            <td>申 请 人：
+                <input id="Name_of_applicant" type="text" name="Name_of_applicant" placeholder="请输入您的姓名"
+                       class="inputClass"><span id="Name_applicant_tip">&nbsp;*</span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>公司人数：
+                <input id="Number_of_Companies" type="text" name="Number_of_Companies" placeholder="请输入公司的人员数量"
+                       class="inputClass"><span id="Number_Companies_tip">&nbsp;*</span></td>
+            <td>手机号码：
+                <input id="Phone_Number" type="text" name="phone_number" placeholder="请输入您的手机号码"
+                       class="inputClass"><span id="Phone_Number_tip">&nbsp;*</span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>公司部门：
+                <input id="the_Department" type="text" name="the_Department" placeholder="请输入公司申请品尝活动的部门"
+                       class="inputClass"><span id="the_Department_tip">&nbsp;*</span></td>
+            <td>办公电话：
+                <input id="fixed_line_Telephone" type="text" name="fixed_line_Telephone" placeholder="请输您的办公电话"
+                       class="inputClass"><span id="Telephone_tip">&nbsp;*</span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td></td>
+            <td>备注说明：
+                <textarea name="Note" id="Note" placeholder="请输入备注信息" class="inputClass"></textarea></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">
+                <div class="a_back"><a href="">提交申请</a></div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!--头部信息表格结束-->
+<!--头部主要内容商品信息表格 结束-->
+<!--商品分享内容开始-->
+<div class="showBanner w">
+    <img src="images4/showBanner.gif" alt="美味分享"/>
+</div>
+<br/>
+<!--商品分享内容结束-->
+<!--商品展示图片开始-->
+<div class="showTime w">
+    <div class="showTime-1 fl">
+        <span class="showTime-1-top">试吃案例分享</span><span class="showTime-1-top-2">-广西</span>
+
+        <div class="showTime-1-line"></div>
+            <span class="showTime-1-world">
+                <p>移动在线广西分公司于2016年8月4日试吃元祖脆雪月、雪月饼，试吃人数25人。</p>
+                <p>顾客超赞我们的产品，尤其是冰淇淋月饼，口感独特，味道绝佳，纷纷拍照分享。 </p>
+            </span>
+    </div>
+    <div class="showTime-2 fl"><img src="images4/show1.jpg" alt="展示照片1"/></div>
+    <div class="showTime-3 fr"><img src="images4/show2.jpg" alt="展示照片2"/></div>
+</div>
+<!--华丽的分割线============开始-->
+<div class="showTime-line w"></div>
+<!--华丽的分割线============结束-->
+<div class="againShowTime w">
+    <div class="showTime-2 fl "><img src="images4/show3.jpg" alt="展示照片3"/></div>
+    <div class="showTime-3 fl againShowTime-img"><img src="images4/show4.jpg" alt="展示照片4"/></div>
+    <div class="showTime-1 fr">
+        <span class="showTime-1-top">试吃案例分享</span><span class="showTime-1-top-2">-广西</span>
+
+        <div class="showTime-1-line"></div>
+            <span class="showTime-1-world">
+                <p>广西兴宁区街道办事处于2016年8月8日试吃元祖雪月饼，试吃人数25人。</p>
+                <p>顾客对我们带去的试吃产品感到惊喜和意外，不仅品尝冰淇淋月饼，还品尝到了蛋糕和凤梨酥。 </p>
+            </span>
+    </div>
+
+</div>
+<!--商品展示图片结束-->
+<!--商品内容结束-->
+<!--客服开始-->
+<!--qq聊天代码部分begin-->
+<div class="serve">
+    <!--<div class="closeLight">-->
+        <!--<input type="button" value=" 关灯/开灯" id="closeLight-1"/>-->
+    <!--</div>-->
+    <div class="izl-rmenu">
+        <a class="consult" target="_blank">
+            <div class="phone" style="display:none;">010-15011551417</div>
+        </a>
+        <a class="cart">
+            <div class="pic"></div>
+        </a>
+        <a href="javascript:void(0)" class="btn_top" style="display: block;"></a>
+    </div>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=qq&menu=yes"
+       id="udesk-feedback-tab" class="udesk-feedback-tab-left"
+       style="display: block; background-color: black;"></a>
+</div>
+<!--qq聊天代码部分end-->
+<!--关灯雪花效果开始-->
+
+<!--关灯雪花效果结束-->
+<!--客服结束->
+<!--底部内容开始-->
+<div class="footer w clearfix">
+    <div class="slogen">
+        <span class="slogen-item sicon1"><img src="images4/jingxuanshicai.png" alt=""></span>
+        <span class="slogen-item sicon2"><img src="images4/yongxinfuwu.png" alt=""></span>
+        <span class="slogen-item sicon3"><img src="images4/shipinanquan.png" alt=""></span>
+        <span class="slogen-item sicon4"><img src="images4/tiexinzhaipei.png" alt=""></span>
+    </div>
+    <div class="link">
+        <span>帮助中心 |  关于我们  |  元祖服务   |    元组会员   | 人才招聘   |联系我们</span>
+    </div>
+    <div class="rightCopy">
+        <p>版权所有@2015上海元祖梦果子股份有限公司 <img src="images4/guohui.png" alt=""/>泸公网安备31011802001203号</p>
+    </div>
+    <div class="bot">
+        <img src="images4/bot1.png" alt=""/>
+        <img src="images4/bot2.png" alt=""/>
+        <img src="images4/bot3.png" alt=""/>
+        <img src="images4/bot4.png" alt=""/>
+    </div>
+</div>
+<div class="leftfix">
+    <div class="leftsmall">
+        <div class="top icon1"><a href="#">TOP</a></div>
+        <div class="lb icon2"><a href="#"><img src="images/lb.png" alt=""/></a></div>
+        <div class="shopping icon3"><a href="#"><img src="images/gouwuche.png" alt=""/> <i>购物车</i> <e>0</e></a>
+        </div>
+        <div class="start icon4">
+            <a href="#">☆</a>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".icon1").mouseover(function () {
+            $(this).css("backgroundColor", "darkred");
+        });
+        $(".icon1").mouseout(function () {
+            $(this).css("backgroundColor", "");
+
+        });
+        $(".icon2").mouseover(function () {
+            $(".lb").css("backgroundColor", "darkred");
+        });
+        $(".icon2").mouseout(function () {
+            $(this).css("backgroundColor", "");
+
+        });
+        $(".icon3").mouseover(function () {
+            $(this).css("backgroundColor", "darkred");
+            $("e").css({"color": "darkred", "backgroundColor": "white"});
+        });
+        $(".icon3").mouseout(function () {
+            $(this).css("backgroundColor", "");
+            $("e").css({"color": "", "backgroundColor": "darkred"});
+        });
+        $(".icon4").mouseover(function () {
+            $(this).css("backgroundColor", "darkred");
+        });
+        $(".icon4").mouseout(function () {
+            $(this).css("backgroundColor", "");
+
+        });
+    });
+</script>
+<!--底部内容结束-->
+</body>
+</html>

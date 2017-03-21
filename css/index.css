@@ -1,0 +1,258 @@
+.main{
+    width: 1200px;
+    height: 437px;
+    position: relative;
+}
+.main .banner{
+    width: 1200px;
+    height: 437px;
+    overflow: hidden;
+    position: relative;
+}
+.banner ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7200px;
+}
+.banner li {
+    width: 1200px;
+    height: 437px;
+    overflow: hidden;
+    float: left;
+}
+.banner ol{
+    position: absolute;
+    top: 400px;
+    left: 560px;
+    line-height: 20px;
+    text-align: center;
+}
+.banner ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.banner ol li.current {
+    background: darkblue;
+}
+.main .left{
+    width: 224px;
+    position: absolute;
+    z-index: 1;
+}
+.main .left ul li{
+    height: 55px;
+    line-height: 55px;
+    background-color: black;
+    opacity: 0.8;
+}
+.main .left ul li:hover{
+    background-color: cornflowerblue;
+}
+.main .left ul li a{
+    color: white;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.wrapper{
+    height: 352px;
+}
+.wrapper .left{
+
+    width: 904px;
+}
+.wrapper .left .tab{
+    height: 60px;
+}
+.wrapper .left ul li{
+    float: left;
+    margin-top: 20px;
+}
+.wrapper .left ul li h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 60px;
+}
+.wrapper .left .tablis{
+    width: 904px;
+    height: 274px;
+    border-top: 3px solid black;
+    overflow: hidden;
+}
+.tablis .products {
+    float: left;
+    display: none;
+}
+
+.tablis .selected {
+    display: block;
+}
+
+.wrapper .right{
+    margin-top: 50px;
+}
+.MUCH{
+    height: 450px;
+    background: #F9F9F9;
+    line-height: 54px;
+    border-bottom: 2px solid #E4004F;
+}
+.MUCH .toptitle{
+    height: 54px;
+    padding-left: 10px;
+}
+.MUCH .toptitle span{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.MUCH .cake img {
+    vertical-align: top;
+}
+.MUCH .cake .big1{
+    float: left;
+}
+.MUCH .cake .big{
+    float: left;
+    padding: 0 3px;
+    position: relative;
+}
+.MUCH .cake .big .small{
+    width: 300px;
+    height: 300px;
+    /*background-color: darkmagenta;*/
+    position: absolute;
+    top: -26px;
+    left: 2PX;
+    cursor: pointer;
+}
+.MUCH .cake .big .s1{
+    background:url("../images/big1.png");
+    opacity:0 ;
+}
+.MUCH .cake .big .s2{
+     background:url("../images/big2.png");
+     opacity:0 ;
+ }
+.MUCH .cake .big .s3{
+      background:url("../images/big3.png");
+      opacity:0 ;
+}
+/*元祖礼盒*/
+.gift{
+    height: 450px;
+    background: #F9F9F9;
+    line-height: 54px;
+    border-bottom: 2px solid #E4004F;
+}
+.gift .toptitle{
+    height: 54px;
+    padding-left: 10px;
+}
+.gift ul li{
+    float: left;
+    padding: 10px 5px;
+}
+/*精选活动*/
+.activity{
+    height: 260px;
+}
+.activity span a{
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+}
+.activity ul li{
+    float: left;
+    padding: 10px;
+}
+.leftfix{
+    height: 600px;
+    width: 37px;
+    background-color: #444851;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.leftfix .leftsmall{
+    width: 37px;
+    height: 250px;
+    background-color: #31353E;
+    position: fixed;
+    top: 220px;
+    right: 0;
+}
+.leftfix .leftsmall .top a{
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+}
+.leftfix .leftsmall .lb{
+    /*margin-top: 10px;*/
+    padding-left: 5px;
+    height: 30px;
+    border-bottom: 1px solid #666666;
+}
+.leftfix .leftsmall .shopping{
+    padding: 10px;
+    color: white;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    height: 122px;
+}
+/*.leftfix .leftsmall .shopping:hover{*/
+    /*background-color: darkred;*/
+/*}*/
+.leftfix .leftsmall .shopping img{
+    position: absolute;
+    left: 5px;
+}
+.leftfix .leftsmall .shopping i{
+    position: absolute;
+    top: 45px;
+    color: #FFFFFF;
+}
+.leftfix .leftsmall .shopping e{
+    background-color: #D02631;
+    color: white;
+    position: absolute;
+    top: 105px;
+    left: 10px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 0 7px 7px 7px;
+    padding: 0 6px;
+}
+/*.leftfix .leftsmall .shopping span:hover{*/
+    /*background-color: white;*/
+    /*color: darkred;*/
+/*}*/
+.leftfix .leftsmall .start{
+    position: absolute;
+    /*bottom: 10px;*/
+    /*left: 6px;*/
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    border-top: 1px solid #666666;
+    padding-top: 10px;
+    height: 30px;
+    width: 36px;
+}
+.leftfix .leftsmall .start a{
+    color: #FFFFFF;
+}
+
+
+
+
